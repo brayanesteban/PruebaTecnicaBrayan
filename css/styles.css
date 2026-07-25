@@ -385,9 +385,9 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .video-player-wrapper {
-/* ========================================================
-   CONTENEDOR DE LA IMAGEN (Traducido de Figma)
-   ======================================================== */
+/* ========================
+   CONTENEDOR DE LA IMAGEN 
+   ======================== */
 .video-image-wrapper {
   width: 100%;
   max-width: 1200px;
@@ -406,6 +406,100 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   object-fit: cover; 
 }
 
+/* =================
+   SECCIÓN: FEATURES 
+   ================= */
+.features-section {
+  width: 100%;
+  height: 795px;             
+  background: #F3F7FB;       
+  display: flex;
+  justify-content: center;
+  align-items: center;       
+  opacity: 1;                
+}
+
+.features-container {
+  width: 100%;
+  max-width: 1440px;         
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         
+}
+
+/* ==================
+  SECCIÓN: SOLUTIONS
+   ================== */
+.solutions-section {
+  width: 100%;
+  height: 838px;             
+  background-color: #ffffff; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;  
+  padding-top: 64px;        
+  opacity: 1;                
+}
+
+.solutions-container {
+  width: 100%;
+  max-width: 1440px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 120px; 
+}
+
+.solutions-header {
+  text-align: center;
+  width: 100%;
+  max-width: 792px;          /* CORREGIDO: Ancho exacto de Figma para forzar el salto de línea */
+  margin-bottom: 48px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.solutions-title {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 76px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #003A81;            /* CORREGIDO: Color azul exacto de este H2 */
+  margin-bottom: 16px;
+}
+
+.solutions-title .text-green {
+  color: #007D32; 
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 76px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.solutions-subtitle {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #002952; 
+  margin: 0;
+  opacity: 1;
+}
 }
 
 
