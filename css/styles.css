@@ -385,7 +385,7 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* ========================
-   CONTENEDOR DE LA IMAGEN 
+  CONTENEDOR DE LA IMAGEN 
    ======================== */
 .video-image-wrapper {
   width: 100%;
@@ -459,8 +459,8 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 .solutions-header {
   text-align: center;
   width: 100%;
-  align-items: flex-start;
-  padding: 64px 0 72px;
+  max-width: 792px;
+  margin-bottom: 64px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -469,12 +469,12 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 .solutions-title {
   max-width: 792px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: medium;
   font-weight: 500;
   font-size: 64px;
   line-height: 76px;
-  letter-spacing: 0%;
-
-  text-align: center;
+  letter-spacing: 0;
+  align-items: center;
   color: #003A81;            
   margin-bottom: 0;
 }
@@ -484,7 +484,7 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .solutions-subtitle {
-  max-width: 792px;
+  max-width: 888px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -493,70 +493,40 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-align: center;
   color: #002952; 
   margin: 0;
-  opacity: 1
 }
 
 .solutions-grid {
   width: 100%;
-  max-width: 996px;
+  max-width: 1188px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 282px);
   gap: 20px;
+  justify-content: center;
 }
 
 .solution-card {
-  min-height: 275px;
+  width: 282px;
+  height: 334px;
   background: #f3f7fb;
-  border-radius: 6px;
-  padding: 13px 13px 20px;
+  border-radius: 8px;
+  padding: 16px 16px 24px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 10px;
 }
 
 .solution-card__image {
-  width: 100%;
-  height: 184px;
+  display: block;
+  width: 250px;
+  height: 222px;
   border-radius: 4px;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-}
-
-.solution-card__image--horeca {
-  background:
-    radial-gradient(circle at 35% 72%, #f5f8ff 0 11%, transparent 12%),
-    radial-gradient(circle at 26% 73%, #f15d2a 0 3%, transparent 4%),
-    linear-gradient(90deg, rgba(245, 246, 236, .95) 0 42%, rgba(92, 80, 61, .8) 42% 47%, transparent 48%),
-    linear-gradient(180deg, #ebe7db 0 28%, #6e665a 28% 31%, #b6ada0 31% 54%, #d2c2a7 54% 100%);
-}
-
-.solution-card__image--industrial {
-  background:
-    radial-gradient(circle at 48% 42%, #e8d2bd 0 10%, transparent 11%),
-    linear-gradient(108deg, transparent 0 42%, #205681 43% 58%, transparent 59%),
-    linear-gradient(90deg, rgba(8, 47, 86, .75), rgba(255,255,255,.25)),
-    linear-gradient(180deg, #c7d5df 0 24%, #27394d 24% 60%, #6e859d 60% 100%);
-}
-
-.solution-card__image--comercial {
-  background:
-    linear-gradient(90deg, #eceff2 0 22%, #f8f9fa 22% 45%, #1e2935 45% 78%, #171e28 78%),
-    linear-gradient(180deg, #d7dde3 0 28%, #a8b1ba 28% 100%);
-}
-
-.solution-card__image--salud {
-  background:
-    radial-gradient(circle at 28% 6%, #2a1d18 0 10%, transparent 11%),
-    linear-gradient(110deg, #0e3357 0 26%, transparent 27%),
-    radial-gradient(circle at 74% 47%, #f8fbfd 0 13%, transparent 14%),
-    linear-gradient(180deg, #d9d4ce 0 45%, #b9b2aa 45% 100%);
+  object-fit: cover;
+  background-color: #dfeaf5;
 }
 
 .solution-card h3 {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 20px;
-  font-style: bold;
   font-weight: 700;
   line-height: 28px;
   color: #003a70;
