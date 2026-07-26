@@ -101,28 +101,36 @@
       </section>
             
       <!-- 5. RESULTS SECTION -->
-      <section class="results-section">
-        <div class="results-container">
-          <div class="results-header">
-            <h2 class="results-title">Resultados de nuestro<br><span>Reto Tork®</span></h2>
-            <div class="results-controls" aria-label="Controles de resultados">
-              <button class="results-control" type="button" aria-label="Resultado anterior">‹</button>
-              <button class="results-control" type="button" aria-label="Resultado siguiente">›</button>
-            </div>
-          </div>
+<section class="results-section">
+  <div class="results-container">
+    <div class="results-header">
+      <h2 class="results-title">Resultados de nuestro<br><span>Reto Tork®</span></h2>
+      <div class="results-controls" aria-label="Controles de resultados">
+        <button class="results-control" type="button" aria-label="Resultado anterior">
+          <svg class="results-control-icon" viewBox="0 0 24 24" fill="none">
+            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="results-control results-control--next" type="button" aria-label="Resultado siguiente">
+          <svg class="results-control-icon" viewBox="0 0 24 24" fill="none">
+            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
 
-          <article class="results-card">
-            <img class="results-card__image" src="assets/ResultadosImagen.png" alt="Persona usando un dispensador Tork en un baño">
-            <div class="results-card__content">
-              <p><strong>42%</strong> de ahorro<br>con sistema de<br>toallas Tork Matic<br>v/s sistema<br>tradicional</p>
-            </div>
-          </article>
-        </div>
-      </section>
+    <article class="results-card" id="resultsCard">
+      <img class="results-card-image" id="resultsImage" src="assets/ResultadosImagen.png" alt="Persona usando un dispensador Tork en un baño">
+      <div class="results-card-content" id="resultsContent">
+        <p><strong>42%</strong> de ahorro<br>con sistema de<br>toallas Tork Matic<br>v/s sistema<br>tradicional</p>
+      </div>
+    </article>
+  </div>
+</section>
     
     </main>
   </div> 
 
-  <script type="module" src="js/app.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>

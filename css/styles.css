@@ -588,16 +588,30 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .results-control {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
+  opacity: 1;
+  gap: 10px;
+  border-radius: 24px;
+  padding: 10px;
+  background: #003366;
   border: 0;
-  border-radius: 50%;
-  background-color: #003A81;
-  color: #ffffff;
-  font-family: Helvetica Neue;
-  font-size: 32px;
-  line-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+}
+
+.results-control-icon {
+  width: 32px;
+  height: 32px;
+  color: #ffffff;
+  transform: rotate(0deg);
+}
+
+
+.results-control--next .results-control-icon {
+  transform: rotate(180deg);
 }
 
 .results-card {
@@ -605,12 +619,13 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   height: 526px;
   margin: 0;
   display: grid;
-  grid-template-columns: 792px 384px;
+  grid-template-columns: 792px 1fr;
+  gap: 24px;
   background-color: transparent;
   overflow: visible;
 }
 
-.results-card__image {
+.results-card-image {
   width: 792px;
   height: 526px;
   opacity: 1;
@@ -619,9 +634,18 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   object-position: left center;
   display: block;
 }
+.results-card-image,
+.results-card-content {
+  transition: opacity 0.25s ease;
+}
 
-.results-card__content {
-  width: 384px;
+.results-card--fading .results-card-image,
+.results-card--fading .results-card-content {
+  opacity: 0;
+}
+
+.results-card-content {
+  width: auto;
   height: 526px;
   opacity: 1;
   gap: 10px;
@@ -632,9 +656,10 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 60px 32px;
 }
 
-.results-card__content p {
+.results-card-content p {
   width: 320px;
-  height: 241px;
+  height: auto;
+  min-height: 241px;
   opacity: 1;
   font-family: Helvetica Neue;
   font-weight: 400;
@@ -646,7 +671,7 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0;
 }
 
-.results-card__content strong {
+.results-card-content strong {
   font-family: Helvetica Neue;
   font-weight: 700;
   font-style: Bold;
