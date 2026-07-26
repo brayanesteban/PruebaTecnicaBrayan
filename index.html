@@ -13,9 +13,14 @@
     <header class="main-header">
       <div class="header-container">
         
+        <button class="menu-btn" aria-label="Abrir menú">
+      <img src="assets/menu.png" alt="menu">
+     </button>
         <a href="#" class="logo-container">
-          <img src="assets/Union.png" alt="Tork Logo" class="logo-img">
+          <img src="assets/Union.png" alt="Tork Logo" class="logo-img logo-desktop">
+          <img src="assets/Logotipo.png" alt="Tork" class="logo-img logo-mobile">
         </a>
+
 
         <div class="search-bar">
           <input type="text" placeholder="¿Qué buscas hoy?">
@@ -24,8 +29,9 @@
         </div>
 
         <nav class="header-actions">
-          <a href="#ayuda" class="action-link">Ayuda</a>
-          <a href="#login" class="action-link login-link"><img src="assets/account_circle.png" alt="User" class="login-icon-img">Inicia sesión</a>
+          <a href="#ayuda" class="action-link help-link">Ayuda</a>
+              <a href="#login" class="action-link login-link">
+        <img src="assets/account_circle.png" alt="User"class="login-icon-img"><span>Inicia sesión</span></a>
           <a href="#carrito" class="cart-btn">
             <img src="assets/Vector.png" alt="Cart" class="cart-icon-img">
             <span class="cart-count">0</span>
@@ -37,16 +43,33 @@
     <main>
       <h1 class="visually-hidden">Tork-Higiene profesional para los desafíos de hoy y del mañana</h1>
 
-      <section class="hero-section">
-        <div class="hero-container">
-          <img src="assets/Group 1.png" alt="Hero" class="hero-img">
-        </div>
+   <div class="countdown-mobile">
+    <p class="countdown-mobile__text">
+        Regístrate y descarga la guía de optimización de costos
+    </p>
+
+    <a href="#" class="countdown-mobile__btn">
+        Quiero registrarme
+    </a>
+</div>
+<section class="hero-section">
+    <div class="hero-container">
+
+        <img src="assets/Group 1.png"
+        alt="Hero"
+        class="hero-img hero-desktop">
+
+        <img src="assets/media1movil.png"
+        alt="Hero móvil"
+        class="hero-img hero-mobile">
+
+    </div>
+</section>
 
         <div class="countdown-card">
           <p class="countdown-text">Regístrate y descarga la guía de optimización de costos</p>
           <a href="#" class="btn-register btn-registrer"><span>Quiero registrarme</span></a>
         </div>
-      </section>
 
       <section class="video-section">
         <div class="video-container-box">
