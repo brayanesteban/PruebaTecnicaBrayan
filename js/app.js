@@ -52,3 +52,19 @@ function goPrev() {
 
 nextBtn.addEventListener("click", goNext);
 prevBtn.addEventListener("click", goPrev);
+
+const innovationsGrid = document.querySelector(".innovations-grid");
+const innovationsPrevBtn = document.querySelector(".innovations-control:not(.innovations-control--next)");
+const innovationsNextBtn = document.querySelector(".innovations-control--next");
+
+const CARD_WIDTH = 384;
+const GAP = 24;
+const SCROLL_AMOUNT = CARD_WIDTH + GAP;
+
+innovationsNextBtn.addEventListener("click", () => {
+  innovationsGrid.scrollBy({ left: SCROLL_AMOUNT, behavior: "smooth" });
+});
+
+innovationsPrevBtn.addEventListener("click", () => {
+  innovationsGrid.scrollBy({ left: -SCROLL_AMOUNT, behavior: "smooth" });
+});

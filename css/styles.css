@@ -30,7 +30,9 @@ body{
   width: 100%;
   min-height: 100%;
   background-color: var(--primary-blue);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+font
 
 body {
   margin: 0;
@@ -346,7 +348,6 @@ object-fit: contain;
 }
 
 .intro-title {
-  font-family: Helvetica Neue;
   font-weight: 500;
   font-style: Medium; 
   font-size: 64px;
@@ -358,7 +359,6 @@ object-fit: contain;
 }
 
 .intro-title .highlight-green {
-  font-family: Helvetica Neue;
   font-weight: 500;
   font-style: Medium;
   font-size: 64px;
@@ -566,7 +566,6 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   width: 859px;
   height: 152px;
   opacity: 1;
-  font-family: Helvetica Neue;
   font-weight: 500;
   font-style: Medium;
   font-size: 64px;
@@ -661,7 +660,6 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   height: auto;
   min-height: 241px;
   opacity: 1;
-  font-family: Helvetica Neue;
   font-weight: 400;
   font-style: Regular;
   font-size: 40px;
@@ -672,7 +670,6 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .results-card-content strong {
-  font-family: Helvetica Neue;
   font-weight: 700;
   font-style: Bold;
   font-size: 40px;
@@ -680,3 +677,202 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   letter-spacing: 0%;
 }
 
+/* ==================
+  SECCIÓN: INNOVATIONS
+   ================== */
+.innovations-section {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 72px;
+}
+
+.innovations-container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 120px;
+}
+
+.innovations-header {
+  width: 100%;
+  margin: 0 0 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.innovations-title {
+  width: 898px;
+  height: 100px;
+  opacity: 1;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 100px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #003A81;
+  margin: 0;
+}
+
+.innovations-title .text-green {
+  color: #007D32;
+}
+
+.innovations-controls {
+  display: flex;
+  gap: 16px;
+}
+
+.innovations-control {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  padding: 10px;
+  background: #003366;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.innovations-control-icon {
+  width: 32px;
+  height: 32px;
+  color: #ffffff;
+}
+
+.innovations-control--next .innovations-control-icon {
+  transform: rotate(180deg);
+}
+
+.innovations-viewport {
+  width: calc(100% + 100px);
+  overflow: hidden;
+}
+
+.innovations-grid {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 48px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+.innovations-grid::-webkit-scrollbar {
+  display: none;              
+}
+
+.innovation-card {
+  width: 384px;
+  height: auto;
+  min-height: 565px;
+  flex-shrink: 0;
+  opacity: 1;
+  border-radius: 8px;
+  background: #F3F7FB;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.innovation-card__image {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  margin-bottom: 24px;
+}
+
+
+.innovation-card__title {
+  width: 336px;
+  height: 36px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 0%;
+  color: #242424;
+  margin: 0 0 12px;
+}
+
+
+.innovation-card__desc {
+  width: 336px;
+  height: auto;
+  min-height: 96px;
+  opacity: 1;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #5C5C5C;
+  margin: 0;
+}
+
+
+.innovation-card__link {
+  width: auto;
+  height: 24px;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  text-align: center;
+  color: #003366;
+  text-decoration: none;
+  margin-top: 16px;
+  white-space: nowrap;
+  margin-top: auto;
+}
+
+.innovation-card__link-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.whatsapp-btn {
+  width: 336px;
+  height: 88px;
+  opacity: 1;
+  gap: 12px;
+  border-radius: 24px;
+  padding: 14px 16px;
+  background: #44CD67CC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.whatsapp-btn__icon {
+  width: 60px;
+  height: 60px;
+}
+
+.whatsapp-btn span {
+  font-family: 'Inter', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #242424;
+}
+
+.whatsapp-btn__arrow {
+  width: 18px;
+  height: 18px;
+  margin-left: auto;
+}
