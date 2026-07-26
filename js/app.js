@@ -68,3 +68,14 @@ innovationsNextBtn.addEventListener("click", () => {
 innovationsPrevBtn.addEventListener("click", () => {
   innovationsGrid.scrollBy({ left: -SCROLL_AMOUNT, behavior: "smooth" });
 });
+
+const growthCtaBtn = document.getElementById("growthCtaBtn");
+const growthFormState = document.getElementById("growthFormState");
+const growthThanksState = document.getElementById("growthThanksState");
+
+growthCtaBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  
+  growthFormState.hidden = true;
+  growthThanksState.hidden = false;
+});

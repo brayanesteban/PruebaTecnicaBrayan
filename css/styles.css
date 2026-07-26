@@ -876,3 +876,124 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   height: 18px;
   margin-left: auto;
 }
+
+/* ==================
+   SECCIÓN: GROWTH / REGISTER
+   ================== */
+.growth-section {
+  width: 100%;
+  max-width: 1440px;
+  height: 632px;
+  opacity: 1;
+  background: #D5ECF9;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.growth-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 60px 0 120px;
+  box-sizing: border-box;
+}
+
+.growth-title {
+  width: 516px;
+  height: 96px;
+  opacity: 1;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0%;
+  color: #003366;
+  margin: 0 0 24px;
+}
+
+.growth-desc {
+  width: 516px;
+  height: 112px;
+  opacity: 1;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #003366;
+  margin: 0 0 32px;
+}
+.growth-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 220px;
+  height: 48px;
+  opacity: 1;
+  border-radius: 100px;
+  padding: 14px 24px;
+  background: #003366;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.growth-cta__text {
+  width: 142px;
+  height: 24px;
+  opacity: 1;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+
+.growth-cta__arrow {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.growth-image-wrapper {
+  width: 708px;
+  height: 632px;
+  overflow: hidden;
+}
+
+.growth-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.growth-text--thanks {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.growth-text--thanks .growth-title {
+  width: 492px;
+  height: 152px;
+  opacity: 1;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 76px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #003366;
+  margin: 0;
+}
+
+.growth-text[hidden] {
+  display: none !important;
+}
