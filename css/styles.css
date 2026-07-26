@@ -1148,4 +1148,135 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   height: 18px;
 }
 
+/* ==================
+   FOOTER
+   ================== */
+.main-footer {
+  width: 1440px;
+  height: 517px;
+  opacity: 1;
+  background: var(--primary-blue);
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding: 64px 64px 24px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.footer-top {
+  width: 1312px;
+  height: 305px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 1;
+}
+
+.footer-brand {
+  flex-shrink: 0;
+}
+
+.footer-logo {
+  width: 102.0625px;
+  height: 69px;
+  opacity: 1;
+  object-fit: contain;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 160px;
+}
+
+.footer-column__title {
+  width: 139px;
+  height: 24px;
+  opacity: 1;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin: 0 0 4px;
+}
+.footer-column__title--spaced {
+  margin-top: 16px;
+}
+
+.footer-phone {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  color: #dddddd;
+  margin: 0;
+}
+
+.footer-hours {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #dddddd;
+  margin: 0;
+}
+
+.footer-link {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-link--spaced {
+  margin-top: 16px;   
+}
+
+.footer-social,
+.footer-payments {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.footer-social img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-payments img {
+  width: 35px;
+  height: 24px;
+  opacity: 1;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-copy {
+  width: 1312px;
+  height: 60px;
+  opacity: 1;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #dddddd;
+  margin: 0;
+}
+
+
+
 
