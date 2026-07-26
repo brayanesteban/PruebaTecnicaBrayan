@@ -211,23 +211,73 @@
   </div>
 </section>
 
-   <!-- 7. GROWTH / REGISTER SECTION -->
+  <!-- 7. GROWTH / REGISTER SECTION -->
 <section class="growth-section">
   <div class="growth-text" id="growthFormState">
     <h2 class="growth-title">Impulsa el crecimiento de<br>tu negocio</h2>
     <p class="growth-desc">Si quieres mejorar el desempeño de tu negocio como yo, regístrate para ser contactado y además obtén la guía completa de como optimizar los costos operativos en tu negocio con Tork®</p>
-<a href="#" class="growth-cta" id="growthCtaBtn">
-  <span class="growth-cta__text">¡Quiero registrarme!</span>
-   <img src="assets/up-right.png" alt="" class="growth-cta__arrow">
-</a>
+    <a href="#" class="growth-cta" id="growthCtaBtn">
+      <span class="growth-cta__text">¡Quiero registrarme!</span>
+      <img src="assets/up-right.png" alt="" class="growth-cta__arrow">
+    </a>
   </div>
 
-    <div class="growth-text growth-text--thanks" id="growthThanksState" hidden>
+  <div class="growth-text growth-text--thanks" id="growthThanksState" hidden>
     <h2 class="growth-title">¡Gracias por<br>registrarte!</h2>
   </div>
 
   <div class="growth-image-wrapper">
     <img src="assets/Foto Artículo Registro. 1@2x.png" alt="Persona sonriendo, fondo con vegetación" class="growth-image">
+  </div>
+
+  <div class="growth-overlay" id="growthOverlay" hidden>
+    <div class="growth-modal" id="growthModal">
+      <button type="button" class="growth-modal__close" id="growthModalClose" aria-label="Cerrar">&times;</button>
+
+      <h3 class="growth-modal__title">Completa tus datos para acceder al contenido completo.</h3>
+
+      <form class="growth-form" id="growthForm">
+        <div class="growth-form__row">
+          <label class="growth-form__field">
+            <input type="text" name="nombre" id="fieldNombre" placeholder="Nombre" required>
+            <small class="growth-form__error" id="errorNombre"></small>
+          </label>
+          <label class="growth-form__field">
+            <input type="text" name="apellido" id="fieldApellido" placeholder="Apellido" required>
+            <small class="growth-form__error" id="errorApellido"></small>
+          </label>
+        </div>
+
+        <label class="growth-form__field growth-form__field--full">
+            <input
+             type="tel"
+            name="celular"
+            id="fieldCelular"
+            placeholder="Celular"
+            inputmode="numeric"
+            pattern="[0-9]*"
+            maxlength="15"
+            required
+            >
+          <small class="growth-form__error" id="errorCelular"></small>
+        </label>
+
+        <label class="growth-form__field growth-form__field--full">
+          <input type="email" name="email" id="fieldEmail" placeholder="Correo empresarial" required>
+          <small class="growth-form__error" id="errorEmail"></small>
+        </label>
+
+        <label class="growth-form__checkbox">
+          <input type="checkbox" id="fieldHabeasData" required>
+          <span>Al enviar el formulario, acepto la política de <a href="#" target="_blank">Habeas Data</a></span>
+        </label>
+
+        <button type="submit" class="growth-form__submit">
+          Registrarme
+          <img src="assets/up-right.png" alt="" class="growth-form__submit-arrow">
+        </button>
+      </form>
+    </div>
   </div>
 </section>
     

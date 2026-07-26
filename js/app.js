@@ -70,12 +70,85 @@ innovationsPrevBtn.addEventListener("click", () => {
 });
 
 const growthCtaBtn = document.getElementById("growthCtaBtn");
+const growthOverlay = document.getElementById("growthOverlay");
+const growthModalClose = document.getElementById("growthModalClose");
+const growthForm = document.getElementById("growthForm");
 const growthFormState = document.getElementById("growthFormState");
 const growthThanksState = document.getElementById("growthThanksState");
 
 growthCtaBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  
+  growthOverlay.hidden = false;
+});
+
+growthModalClose.addEventListener("click", () => {
+  growthOverlay.hidden = true;
+});
+
+growthForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const fields = {
+    nombre: document.getElementById("fieldNombre"),
+    apellido: document.getElementById("fieldApellido"),
+    celular: document.getElementById("fieldCelular"),
+    email: document.getElementById("fieldEmail")
+  };
+
+  const errors = {
+    nombre: document.getElementById("errorNombre"),
+    apellido: document.getElementById("errorApellido"),
+    celular: document.getElementById("errorCelular"),
+    email: document.getElementById("errorEmail")
+  };
+  const habeasData = document.getElementById("fieldHabeasData");
+
+  let isValid = true;
+
+  ["nombre", "apellido", "celular"].forEach((key) => {
+    if (fields[key].value.trim() === "") {
+      fields[key].classList.add("is-invalid");
+      errors[key].textContent = "Este campo es obligatorio";
+      isValid = false;
+    } else {
+      fields[key].classList.remove("is-invalid");
+      errors[key].textContent = "";
+    }
+  });
+
+  const phonePattern = /^[0-9]+$/;
+if (!phonePattern.test(fields.celular.value.trim())) {
+  fields.celular.classList.add("is-invalid");
+  errors.celular.textContent = fields.celular.value.trim() === "" 
+    ? "Este campo es obligatorio" 
+    : "Solo se permiten números";
+  isValid = false;
+} else {
+  fields.celular.classList.remove("is-invalid");
+  errors.celular.textContent = "";
+}
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(fields.email.value.trim())) {
+    fields.email.classList.add("is-invalid");
+    errors.email.textContent = "Ingresa un correo válido";
+    isValid = false;
+  } else {
+    fields.email.classList.remove("is-invalid");
+    errors.email.textContent = "";
+  }
+
+  if (!habeasData.checked) {
+    isValid = false;
+    habeasData.parentElement.style.color = "#D64545";
+  } else {
+    habeasData.parentElement.style.color = "";
+  }
+
+  if (!isValid) return;
+
+  growthOverlay.hidden = true;
+
   growthFormState.hidden = true;
   growthThanksState.hidden = false;
 });
