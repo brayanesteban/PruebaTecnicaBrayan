@@ -25,14 +25,15 @@
   white-space: nowrap;
   border: 0;
 }
+
 html,
 body{
   width: 100%;
   min-height: 100%;
   background-color: var(--primary-blue);
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
 }
-font
 
 body {
   margin: 0;
@@ -707,18 +708,17 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .innovations-title {
-  width: 898px;
-  height: 100px;
-  opacity: 1;
+  width: auto;
+  max-width: 100%;
+  white-space: nowrap;   
+  height: auto;
   font-weight: 500;
   font-size: 64px;
   line-height: 100px;
   letter-spacing: 0%;
-  vertical-align: middle;
   color: #003A81;
   margin: 0;
 }
-
 .innovations-title .text-green {
   color: #007D32;
 }
@@ -1351,7 +1351,7 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .hero-section{
-    margin-top:112px;
+    margin-top:0; 
 }
 
     .hero-container{
@@ -1480,58 +1480,78 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         COUNTDOWN MOBILE
 =========================================*/
 
-    .countdown-mobile{
-        display:flex;
-        align-items:center;
-        justify-content:space-between;
-
-        width:100%;
-        height:58px;
-
-        padding:10px 12px 12px;
-        gap:4px;
-
-        background:#003366;
-        box-sizing:border-box;
-    }
-
-    .countdown-mobile__text{
-        width:194px;
-        height:36px;
-
-        margin:0;
-
-        font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
-        font-weight:500;
-        font-size:12px;
-        line-height:18px;
-
-        color:#FFFFFF;
-    }
-
-    .countdown-mobile__btn{
-        width:128px;
-        height:28px;
-
-        padding:6px 12px;
-        border-radius:28px;
-
-        background:#FFFFFF;
-        color:#003366;
-
-        display:flex;
-        align-items:center;
-        justify-content:center;
-
-        font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
-        font-size:12px;
-        font-weight:700;
-
-        text-decoration:none;
-        box-sizing:border-box;
-        white-space:nowrap;
-    }
+.countdown-mobile {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 58px;
+    padding: 10px 12px 12px 12px; 
+    gap: 4px;
+    background: #007ACC; 
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+    margin-top: 112px;
 }
 
+.countdown-mobile__text {
+    margin: 0;
+    max-width: 194px;
+    font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.02em;   
+    color: #FFFFFF;
+}
+
+.countdown-mobile__btn {
+    width: 128px;
+    height: 28px;
+    padding: 6px 12px;
+    border-radius: 28px;
+    background: #FFFFFF;
+    color: #003366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.intro-title {
+    width: 312px;
+    max-width: 100%;
+    text-align: left;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0%;
+}
+
+.intro-title .highlight-green {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0%;
+}
+
+.intro-subtitle {
+    width: 312px;
+    max-width: 100%;
+    text-align: left;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #003366;
+    margin: 16px auto 0 0;  
+}
+}
 
 

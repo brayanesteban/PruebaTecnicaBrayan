@@ -3,17 +3,17 @@ const resultsData = [
   {
     image: "assets/ResultadosImagen.png",
     alt: "Persona usando un dispensador Tork en un baño",
-    html: "<strong>42%</strong> de ahorro<br>con sistema de<br>toallas Tork Matic<br>v/s sistema<br>tradicional"
+    html: "<strong>42%</strong> de ahorro con sistema de toallas Tork Matic v/s sistema tradicional"
   },
   {
     image: "assets/modulo5.2.png",
     alt: "Otro resultado del reto Tork",
-    html: "En los baños,<br>logramos reducir<br>un <strong>40%</strong> el<br>consumo de papel<br>higiénico (con<br>SmartOne®) en<br>comparación con<br>un rollo tradicional"
+    html: "En los baños, logramos reducir un <strong>40%</strong> el consumo de papel higiénico (con SmartOne®) en comparación con un rollo tradicional"
   },
   {
     image: "assets/modulo5.3.png",
     alt: "Tercer resultado del reto Tork",
-    html: "<strong>51%</strong> de ahorro<br>con Tork Elevation<br>jabón en espuma<br>v/s sistema<br>tradicional"
+    html: "<strong>51%</strong> de ahorro con Tork Elevation jabón en espuma v/s sistema tradicional"
   }
 ];
 
