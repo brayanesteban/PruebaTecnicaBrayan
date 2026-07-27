@@ -152,3 +152,14 @@ if (!phonePattern.test(fields.celular.value.trim())) {
   growthFormState.hidden = true;
   growthThanksState.hidden = false;
 });
+
+function updateFormPlaceholders() {
+  const isMobile = window.innerWidth <= 768;
+  document.getElementById('fieldNombre').placeholder = isMobile ? '' : 'Nombre';
+  document.getElementById('fieldApellido').placeholder = isMobile ? '' : 'Apellido';
+  document.getElementById('fieldCelular').placeholder = isMobile ? '+57' : 'Celular';
+  document.getElementById('fieldEmail').placeholder = isMobile ? '' : 'Correo empresarial';
+}
+
+updateFormPlaceholders();
+window.addEventListener('resize', updateFormPlaceholders);
