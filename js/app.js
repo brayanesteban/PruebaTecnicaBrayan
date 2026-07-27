@@ -13,7 +13,7 @@ const resultsData = [
   {
     image: "assets/modulo5.3.png",
     alt: "Tercer resultado del reto Tork",
-    html: "<strong>51%</strong> de ahorro con Tork Elevation jabón en espuma v/s sistema tradicional"
+    html: "<strong>51%</strong> de ahorro con Tork elevation jabón en espuma v/s sistema tradicional"
   }
 ];
 

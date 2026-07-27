@@ -1607,6 +1607,10 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0 auto;
 }
 
+/*=========================================
+        SOLUTIONS MOBILE
+=========================================*/
+
 .solutions-title {
     width: 312px;
     max-width: 100%;
@@ -1701,6 +1705,83 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   gap: 10px;
   border-radius: 8px;
 }
+
+/*=========================================
+        RESULTS MOBILE
+=========================================*/
+
+.results-header {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 312px;
+  max-width: 100%;
+  height: auto;
+  gap: 32px;
+  margin: 0 auto;   
+}
+
+.results-title {
+  width: 312px;
+  max-width: 100%;
+  height: auto;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0%;
+  margin: 0;
+}
+
+.results-container {
+  padding: 0 24px;
+  max-width: 100%;
+}
+
+.results-section {
+  height: auto;
+  padding: 24px 0 48px 0;   
+}
+
+.results-title span {
+  font-weight: 700;
+}
+
+.results-controls {
+  padding-top: 0;   
+}
+.results-title__break {
+  display: none;
+}
+
+.results-card {
+  grid-template-columns: 1fr;   
+  width: 312px;
+  max-width: 100%;
+  height: auto;
+  gap: 24px;
+  margin: 30px auto 0 auto;  
+}
+
+.results-card-image {
+  width: 312px;
+  max-width: 100%;
+  height: 409px;
+  border-radius: 16px;
+  object-fit: cover;
+  object-position: 26% center;   
+}
+
+.results-card-content {
+  width: 312px;
+  max-width: 100%;
+  height: auto;   
+  border-radius: 24px;
+  padding: 32px;
+  gap: 10px;
+  margin: 0;
+}
+
+
+
 }
 
 
