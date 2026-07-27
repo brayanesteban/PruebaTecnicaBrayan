@@ -393,5 +393,52 @@
   </div> 
 
   <script src="js/app.js"></script>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCQe7uTjKTELLhvpw2hKOV9GFEJ6AhzDQU",
+      authDomain: "pruebatecnicafirebasebrayan.firebaseapp.com",
+      projectId: "pruebatecnicafirebasebrayan",
+      storageBucket: "pruebatecnicafirebasebrayan.firebasestorage.app",
+      messagingSenderId: "935642644727",
+      appId: "1:935642644727:web:921bab71be8bdb1b43d3f2",
+      measurementId: "G-KVLR9CBQY4"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    const formulario = document.getElementById("growthForm");
+
+    if (formulario) {
+      formulario.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const nombre = document.getElementById("fieldNombre").value;
+        const apellido = document.getElementById("fieldApellido").value;
+        const celular = document.getElementById("fieldCelular").value;
+        const email = document.getElementById("fieldEmail").value;
+
+        try {
+          await addDoc(collection(db, "mensajes"), {
+            nombre: nombre,
+            apellido: apellido,
+            celular: celular,
+            email: email,
+            fecha: new Date()
+          });
+
+          alert("¡Registro guardado en Firebase con éxito!");
+          formulario.reset();
+        } catch (error) {
+          console.error("Error al guardar:", error);
+          alert("Hubo un error al guardar el registro.");
+        }
+      });
+    }
+  </script>
 </body>
 </html>
