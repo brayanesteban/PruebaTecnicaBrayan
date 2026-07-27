@@ -723,7 +723,15 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #003A81;
   margin: 0;
 }
-.innovations-title .text-green {
+.innovations-word--1 {
+  color: #003A81;
+}
+
+.innovations-word--2 {
+  color: #003A81;
+}
+
+.innovations-word--3 {
   color: #007D32;
 }
 
@@ -1762,7 +1770,7 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .results-card-image {
-  width: 312px;
+  width: 248px;
   max-width: 100%;
   height: 409px;
   border-radius: 16px;
@@ -1780,8 +1788,147 @@ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin: 0;
 }
 
+/*=========================================
+        INNOVATIONS MOBILE
+=========================================*/
+
+.innovations-container {
+  padding: 0 24px;
+  max-width: 100%;
+}
+
+.innovations-section {
+  width: 100%;
+  min-height: 781px;
+  margin: 0 auto;
+  padding: 24px 0 48px 0;
+}
+
+.innovations-header {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 312px;
+  max-width: 100%;
+  height: auto;
+  gap: 32px;
+  margin: 30px auto 32px auto;
+}
+
+.innovations-title {
+  width: 312px;
+  max-width: 100%;
+  height: auto;
+  white-space: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0%;
+  margin: 0;
+}
 
 
+.innovations-controls {
+  gap: 16px;
+}
+
+.innovations-word--1 {
+  color: #003A81;
+}
+
+.innovations-word--2 {
+  color: #007D32;
+}
+
+.innovations-word--3 {
+  color: #007D32;
+}
+
+.innovation-card {
+  width: 227px;
+  height: 501px;
+  min-height: 501px;
+  padding: 16px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.innovation-card__image {
+  width: 100%;
+  height: 160px;   
+  object-fit: contain;
+  margin-bottom: 16px;
+  flex-shrink: 0;
+}
+
+.innovation-card__link {
+  width: 173px;
+  max-width: 100%;
+  height: 20px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: center;
+  margin-top: auto;   
+}
+
+.innovation-card__title {
+  width: 192px;
+  max-width: 100%;
+  height: auto;   
+  white-space: normal;  
+  overflow: visible;
+  text-overflow: clip;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  margin: 0 0 12px;
+  flex-shrink: 0;
+}
+.innovation-card__desc {
+  width: 203px;
+  max-width: 100%;
+  height: auto;
+  min-height: 144px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.innovations-grid {
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
+
+.innovations-viewport {
+  width: 100%;   
+}
+
+.whatsapp-btn {
+  align-items: center;
+  width: auto;
+  max-width: 100%;
+  padding: 14px 24px;
+}
+
+.whatsapp-btn span {
+  width: auto;
+  white-space: nowrap;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+}
 }
 
 
